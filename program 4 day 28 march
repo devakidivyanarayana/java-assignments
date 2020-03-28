@@ -1,0 +1,25 @@
+import java.util.Scanner;
+// class name training
+public class Training {
+	// main method
+	public static void main(String[] args) {
+		// initialization of hours with float data type
+		float hours;
+	Scanner sc=new Scanner(System.in);
+	   System.out.println("Input the time taken by worker: ");
+	   hours = sc.nextFloat();
+	   // using if lto write logic 
+		if(hours >= 1 && hours <= 3) {
+			System.out.print("Worker is highly efficient");
+		}
+		if(hours > 3 && hours <= 4) {
+			System.out.print("Worker needs to improve speed");
+		}
+		if(hours > 4 && hours <= 5) {
+			System.out.print("Give training to improve speed of worker");
+		}
+		if(hours > 5) {
+			System.out.print("leave company");
+		}
+	}
+}
